@@ -41,12 +41,14 @@ import org.jetbrains.compose.resources.ExperimentalResourceApi
 
         Column {
             Row {
-                Button(onClick={navigator.push(screenRouter(AllScreens.About))}) {
-                    Text("Home")
-                }
+
                 Spacer(modifier = Modifier.width(10.dp))
                 Button(onClick={navigator.push(screenRouter(AllScreens.Contact))}) {
                     Text("Contact Us")
+                }
+                Spacer(modifier = Modifier.width(10.dp))
+                Button(onClick={navigator.push(screenRouter(AllScreens.About))}) {
+                    Text("About")
                 }
             }
 
@@ -58,7 +60,7 @@ import org.jetbrains.compose.resources.ExperimentalResourceApi
                     Image(
                             url = ("https://i.pinimg.com/564x/2a/50/62/2a5062be288d6c4dceec5a1f9447c105.jpg"),
 
-                        modifier = Modifier.align(Alignment.CenterHorizontally).padding(0.dp, 60.dp)
+                        modifier = Modifier.align(Alignment.CenterHorizontally).padding(0.dp, 10.dp)
             )
                     )
 
@@ -136,6 +138,8 @@ import org.jetbrains.compose.resources.ExperimentalResourceApi
                         DispalyMessage = "Please Fill-in All Text Fields"
                     } else {
                         DispalyMessage = " Thank you for your registration $InputName"
+                        navigator.push(screenRouter(AllScreens.About))
+
                     }
                 },
                 modifier = Modifier.size(130.dp,40.dp)

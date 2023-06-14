@@ -7,5 +7,5 @@ import androidx.compose.runtime.Composable
 
 @Composable
 fun MyBottomBar() {
-    BottomAppBar { Text("Copyright (c) 2023 Talib Hussain") }
+    BottomAppBar { Text("Copyright (c) 2023 Mueataz") }
 }
