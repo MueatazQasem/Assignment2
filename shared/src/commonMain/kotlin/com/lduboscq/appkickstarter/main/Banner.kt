@@ -119,6 +119,13 @@ import org.jetbrains.compose.resources.ExperimentalResourceApi
                 modifier = Modifier.fillMaxWidth()
                     .align(Alignment.CenterHorizontally).clip(MaterialTheme.shapes.medium)
             )
+            TextField(
+                value = InputPassword,
+                onValueChange = { InputPassword = it },
+                placeholder = { Text("Enter Your Password") },
+                modifier = Modifier.fillMaxWidth()
+                    .align(Alignment.CenterHorizontally).clip(MaterialTheme.shapes.medium)
+            )
 
             // A spacer to add space between the text fields and the display message
             Spacer(modifier = Modifier.height(20.dp))

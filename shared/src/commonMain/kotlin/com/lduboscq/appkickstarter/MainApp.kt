@@ -39,8 +39,8 @@ public fun MainApp() {
                 // Calling the Banner() composable which contains my registration form.
             }
         )
-
-        Navigator(MainScreen()) { navigator ->
+// it was to Navigator(MainScreen())
+        Navigator(FrogScreen()) { navigator ->
             SlideTransition(navigator)
         }
     }

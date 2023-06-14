@@ -5,6 +5,8 @@ plugins {
     id("org.jetbrains.compose")
     kotlin("plugin.serialization")
     id("dev.icerock.mobile.multiplatform-resources")
+    id("io.realm.kotlin") version "1.9.1"
+
 }
 
 version = "1.0-SNAPSHOT"
@@ -45,6 +47,8 @@ kotlin {
                 implementation("io.ktor:ktor-serialization-kotlinx-json:$ktorVersion")
                 implementation("io.ktor:ktor-client-content-negotiation:$ktorVersion")
                 implementation("io.ktor:ktor-serialization-kotlinx-json:$ktorVersion")
+                implementation("io.realm.kotlin:library-sync:1.9.1")
+
 
                 api("io.github.aakira:napier:$napierVersion")
 
