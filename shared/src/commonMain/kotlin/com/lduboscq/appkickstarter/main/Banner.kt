@@ -4,6 +4,7 @@ import com.lduboscq.appkickstarter.ui.Image
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.IntrinsicSize
+import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
@@ -26,6 +27,8 @@ import androidx.compose.ui.draw.clip
 import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import cafe.adriel.voyager.navigator.LocalNavigator
+import cafe.adriel.voyager.navigator.currentOrThrow
 import dev.icerock.moko.resources.compose.painterResource
 import org.jetbrains.compose.resources.ExperimentalResourceApi
 
@@ -33,8 +36,21 @@ import org.jetbrains.compose.resources.ExperimentalResourceApi
 
     @Composable
     fun Banner() {
+        val navigator = LocalNavigator.currentOrThrow
         // Start of Column, which means items inside will be stacked vertically
+
         Column {
+            Row {
+                Button(onClick={navigator.push(screenRouter(AllScreens.About))}) {
+                    Text("Home")
+                }
+                Spacer(modifier = Modifier.width(10.dp))
+                Button(onClick={navigator.push(screenRouter(AllScreens.Contact))}) {
+                    Text("Contact Us")
+                }
+            }
+
+
             // Opting into using ExperimentalResourceApi for loading an image resource
             @OptIn(ExperimentalResourceApi::class)
             // Displaying an image, which is aligned to center and has a padding of 5.dp
