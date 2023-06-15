@@ -80,6 +80,8 @@ kotlin {
                 implementation("androidx.core:core-ktx:1.9.0")
                 implementation("io.ktor:ktor-client-okhttp:$ktorVersion")
 
+
+
                 api("io.insert-koin:koin-android:$koin_android_version")
                 // Jetpack WorkManager
                 api("io.insert-koin:koin-androidx-workmanager:$koin_android_version")
@@ -87,6 +89,7 @@ kotlin {
                 api("io.insert-koin:koin-androidx-navigation:$koin_android_version")
                 // Compose
                 api("io.insert-koin:koin-androidx-compose:$koin_android_compose_version")
+
             }
         }
         val iosMain by getting {

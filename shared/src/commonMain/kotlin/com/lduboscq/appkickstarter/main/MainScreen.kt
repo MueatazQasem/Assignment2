@@ -22,9 +22,9 @@ internal class MainScreen : Screen {
             topBar = { MyTopBar() },
             bottomBar = { MyBottomBar() },
             floatingActionButton = {
-                FloatingActionButton(onClick = {}) {
-                    Text("Click Me")
-                }
+//                FloatingActionButton(onClick = {}) {
+//                    Text("Click Me")
+//                }
             }
         ) {
             Banner()

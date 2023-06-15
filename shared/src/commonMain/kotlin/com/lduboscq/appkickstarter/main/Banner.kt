@@ -119,35 +119,28 @@ import org.jetbrains.compose.resources.ExperimentalResourceApi
                 modifier = Modifier.fillMaxWidth()
                     .align(Alignment.CenterHorizontally).clip(MaterialTheme.shapes.medium)
             )
-            TextField(
-                value = InputPassword,
-                onValueChange = { InputPassword = it },
-                placeholder = { Text("Enter Your Password") },
-                modifier = Modifier.fillMaxWidth()
-                    .align(Alignment.CenterHorizontally).clip(MaterialTheme.shapes.medium)
-            )
 
             // A spacer to add space between the text fields and the display message
-            Spacer(modifier = Modifier.height(20.dp))
+            Spacer(modifier = Modifier.height(10.dp))
 
             // A Text composable to display a message, which is aligned to center
             Text(DispalyMessage, style = TextStyle(fontSize = 20.sp), modifier = Modifier.align(
                 Alignment.CenterHorizontally))
 
             // A spacer to add space between the display message and the button
-            Spacer(modifier = Modifier.height(50.dp).width(20.dp).padding(16.dp))
+            Spacer(modifier = Modifier.height(20.dp).width(20.dp).padding(16.dp))
 
             // A Button composable with a click listener. When the button is clicked, it checks if any of the fields are empty
             // If empty, it updates the DisplayMessage with an error message, else with a success message
             Button(
-                onClick = {
-                    if (InputName.isEmpty() || InputEmail.isEmpty() || InputPassword.isEmpty()){
-                        DispalyMessage = "Please Fill-in All Text Fields"
-                    } else {
-                        DispalyMessage = " Thank you for your registration $InputName"
-                        navigator.push(screenRouter(AllScreens.About))
-
-                    }
+                onClick = { navigator.push(screenRouter(AllScreens.About))
+//                    if (InputName.isEmpty() || InputEmail.isEmpty() || InputPassword.isEmpty()){
+//                        DispalyMessage = "Please Fill-in All Text Fields"
+//                    } else {
+//                        DispalyMessage = " Thank you for your registration $InputName"
+//                        navigator.push(screenRouter(AllScreens.About))
+//
+//                    }
                 },
                 modifier = Modifier.size(130.dp,40.dp)
                     .clip(RoundedCornerShape(30))

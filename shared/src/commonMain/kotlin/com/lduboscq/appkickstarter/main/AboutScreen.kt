@@ -1,11 +1,15 @@
 package com.lduboscq.appkickstarter.main
 
 import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.Spacer
+import androidx.compose.foundation.layout.height
 import androidx.compose.material.Button
 import androidx.compose.material.FloatingActionButton
 import androidx.compose.material.Scaffold
 import androidx.compose.material.Text
 import androidx.compose.runtime.Composable
+import androidx.compose.ui.Modifier
+import androidx.compose.ui.unit.dp
 import cafe.adriel.voyager.core.screen.Screen
 import cafe.adriel.voyager.navigator.LocalNavigator
 import cafe.adriel.voyager.navigator.currentOrThrow
@@ -26,7 +30,11 @@ internal class AboutScreen : Screen {
                 Button(onClick={navigator.push(screenRouter(AllScreens.Home))}) {
                     Text("Home")
                 }
+                Spacer(modifier = Modifier.height(10.dp))
+                Text("asdfadasdasd")
             }
         }
+
+
     }
 }
