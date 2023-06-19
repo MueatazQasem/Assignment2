@@ -50,6 +50,7 @@ kotlin {
                 implementation("io.realm.kotlin:library-sync:1.9.1")
 
 
+
                 api("io.github.aakira:napier:$napierVersion")
 
                 api("com.russhwolf:multiplatform-settings:1.0.0")
@@ -60,6 +61,8 @@ kotlin {
                 implementation(compose.material3)
                 implementation("org.jetbrains.compose.components:components-resources:1.3.0-beta04-dev879")
                 implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:1.4.1")
+
+
                 api("io.github.qdsfdhvh:image-loader:$compose_image")
 
                 api("org.jetbrains.kotlinx:kotlinx-datetime:0.4.0")

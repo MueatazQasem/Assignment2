@@ -40,7 +40,7 @@ public fun MainApp() {
             }
         )
 // it was to Navigator(MainScreen())
-        Navigator(FrogScreen()) { navigator ->
+        Navigator(MainScreen()) { navigator ->
             SlideTransition(navigator)
         }
     }

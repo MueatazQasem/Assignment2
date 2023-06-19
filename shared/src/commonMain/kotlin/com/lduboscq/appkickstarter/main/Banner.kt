@@ -37,20 +37,11 @@ import org.jetbrains.compose.resources.ExperimentalResourceApi
     @Composable
     fun Banner() {
         val navigator = LocalNavigator.currentOrThrow
+
         // Start of Column, which means items inside will be stacked vertically
 
         Column {
-            Row {
 
-                Spacer(modifier = Modifier.width(10.dp))
-                Button(onClick={navigator.push(screenRouter(AllScreens.Contact))}) {
-                    Text("Contact Us")
-                }
-                Spacer(modifier = Modifier.width(10.dp))
-                Button(onClick={navigator.push(screenRouter(AllScreens.About))}) {
-                    Text("About")
-                }
-            }
 
 
             // Opting into using ExperimentalResourceApi for loading an image resource
@@ -66,7 +57,7 @@ import org.jetbrains.compose.resources.ExperimentalResourceApi
 
             // Displaying a text for the registration form title, aligned to the center
             Text(
-                "Registration Form!",
+                "Emergency App!",
                 style = MaterialTheme.typography.h4, modifier = Modifier.align(Alignment.CenterHorizontally)
             )
 
@@ -133,14 +124,14 @@ import org.jetbrains.compose.resources.ExperimentalResourceApi
             // A Button composable with a click listener. When the button is clicked, it checks if any of the fields are empty
             // If empty, it updates the DisplayMessage with an error message, else with a success message
             Button(
-                onClick = { navigator.push(screenRouter(AllScreens.About))
-//                    if (InputName.isEmpty() || InputEmail.isEmpty() || InputPassword.isEmpty()){
-//                        DispalyMessage = "Please Fill-in All Text Fields"
-//                    } else {
-//                        DispalyMessage = " Thank you for your registration $InputName"
-//                        navigator.push(screenRouter(AllScreens.About))
-//
-//                    }
+                onClick = {
+                    if (InputName.isEmpty() || InputEmail.isEmpty() || InputPassword.isEmpty()){
+                        DispalyMessage = "Please Fill-in All Text Fields"
+                    } else {
+                        DispalyMessage = " Thank you for your registration $InputName"
+                        navigator.push(screenRouter(AllScreens.Service))
+
+                    }
                 },
                 modifier = Modifier.size(130.dp,40.dp)
                     .clip(RoundedCornerShape(30))

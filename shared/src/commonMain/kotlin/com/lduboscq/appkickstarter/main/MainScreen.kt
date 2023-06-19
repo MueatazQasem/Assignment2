@@ -27,6 +27,7 @@ internal class MainScreen : Screen {
 //                }
             }
         ) {
+
             Banner()
         }
     }
