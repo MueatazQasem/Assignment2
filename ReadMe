@@ -1,0 +1,51 @@
+Emergency App
+EmergencyApp is a comprehensive mobile application designed to provide essential emergency services and information to users. The app offers a range of features and functionalities to assist users in emergency situations. It consists of three main screens: the banner screen, the profile screen, and the service screen.
+
+Functionalities
+Banner Screen
+The banner screen serves as the entry point for users when they launch the app. It provides a user-friendly interface for users to register and access emergency services. The following functionalities are available on the banner screen:
+User Registration: Users can create an account by entering their name, email, and password using the provided input fields.
+
+Profile Screen
+The profile screen displays the user's registration information. It allows users to review the information they entered on the banner screen. The following functionalities are available on the profile screen:
+Name Display: The user's name is displayed in a text field, which is prepopulated with the entered name from the banner screen.
+Email Display: The user's email address is displayed in a text field, which is prepopulated with the entered email from the banner screen.
+Password Display: The user's password is displayed in a text field, which is prepopulated with the entered password from the banner screen.
+
+
+Service Screen
+
+The service screen provides information about the app's services. It includes the following functionalities:
+
+- Contact Us: Users can click on the "Contact Us" button to navigate to the Contact screen and get in touch with the app's support team.
+- About: Users can click on the "About" button to navigate to the About screen and learn more about the app.
+- Profile: Users can click on the "Profile" button to navigate back to the profile screen and view their registration information.
+- CPR: Users can click on the CPR image to navigate to the CPR screen and learn about performing CPR.
+- Wounds: Users can click on the wounds image to navigate to the Wounds screen and learn about treating wounds.
+- Drowning: Users can click on the drowning image to navigate to the Drowning screen and learn about rescuing drowning victims.
+- Broken Bone: Users can click on the broken bone image to navigate to the Broken Bone screen and learn about providing first aid for broken bones.
+
+
+
+
+
+
+Getting Started
+
+To run the app locally, follow these steps:
+
+1. Clone the repository: `git clone https://github.com/your/repo.git`
+2. Open the project in your preferred IDE or text editor.
+3. Build and run the project using the appropriate commands for your development environment.
+4. The app should open, displaying the banner screen.
+
+Technologies Used
+
+MyApp is built using the following technologies:
+
+- Kotlin: The primary programming language used for app development.
+- Jetpack Compose: The modern UI toolkit for building native Android apps.
+- Android Studio: The integrated development environment (IDE) for Android app development.
+
+
+
