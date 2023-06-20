@@ -26,6 +26,53 @@ The service screen provides information about the app's services. It includes th
 - Broken Bone: Users can click on the broken bone image to navigate to the Broken Bone screen and learn about providing first aid for broken bones.
 
 
+UserScreen
+
+The `UserScreen` is a Compose-based screen that allows users to perform CRUD operations on user data. It provides a user interface to add, retrieve, update, and delete user information.
+
+## CRUD Operations
+
+The following CRUD operations are supported in the `UserScreen`:
+
+### Create (Add User)
+
+The "Add User" functionality allows users to create a new user by providing the following information:
+
+- Username: The username of the user.
+- Email: The email address of the user.
+- Password: The password of the user.
+
+Upon clicking the "Add User" button, the user information is sent to the backend or repository for storage.
+
+### Read (Get User / Get All Users)
+
+The "Get User" functionality allows users to retrieve information about a specific user by providing the username. It fetches the user data from the repository and displays it on the screen.
+
+The "Get All Users" functionality retrieves a list of all users from the repository and displays them on the screen. Optionally, users can filter the list by providing a username.
+
+### Update (Update User)
+
+The "Update User" functionality allows users to update the password of an existing user. Users can provide the username and the new password to update the user's information. Upon clicking the "Update User" button, the updated user data is sent to the repository for modification.
+
+### Delete (Delete User)
+
+The "Delete User" functionality allows users to delete a user from the system. Users need to provide the username of the user they want to delete. Upon confirmation, the user data is removed from the repository.
+
+## Usage
+
+To use the `UserScreen` and its CRUD operations, you need to have the necessary dependencies and setup in your project. Make sure you have the required Compose and repository dependencies.
+
+1. Create an instance of the `UserRepository` class, which handles the communication with the backend or data storage.
+
+2. Initialize the `UserScreenModel` by providing the `UserRepository` instance.
+
+3. Use the provided Composable function `UserScreen.Content()` to display the `UserScreen` UI and interact with the CRUD operations.
+
+4. Users can perform CRUD operations by entering the required information in the provided input fields and clicking the corresponding buttons.
+
+## Contributing
+
+Contributions to the `UserScreen` and its CRUD operations are welcome! If you find any issues or have suggestions for improvement, please open an issue or submit a pull request.
 
 
 
