@@ -34,7 +34,7 @@ internal class ServiceScreen : Screen {
         ) {
             Column {
 
-                // Row for buttons: Contact Us, About, Profile
+                // Row for buttons: Contact Us, About, User
                 Row {
                     Spacer(modifier = Modifier.width(10.dp))
                     Button(onClick={navigator.push(screenRouter(AllScreens.Contact))}) {
@@ -45,8 +45,8 @@ internal class ServiceScreen : Screen {
                         Text("About")
                     }
                     Spacer(modifier = Modifier.width(10.dp))
-                    Button(onClick={navigator.push(screenRouter(AllScreens.Profile))}) {
-                        Text("Profile")
+                    Button(onClick={navigator.push(screenRouter(AllScreens.UserScreen))}) {
+                        Text("User")
                     }
                 }
 

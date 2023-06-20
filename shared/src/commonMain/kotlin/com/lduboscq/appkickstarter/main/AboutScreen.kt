@@ -36,14 +36,6 @@ internal class AboutScreen : Screen {
                     Button(onClick = { navigator.push(screenRouter(AllScreens.Service)) }) {
                         Text("Home")
                     }
-                    Spacer(modifier = Modifier.width(10.dp))
-                    Button(onClick = { navigator.push(screenRouter(AllScreens.Contact)) }) {
-                        Text("Contact Us")
-                    }
-                    Spacer(modifier = Modifier.width(10.dp))
-                    Button(onClick = { navigator.push(screenRouter(AllScreens.Profile)) }) {
-                        Text("Profile")
-                    }
                 }
 
                 // Additional content for the About Screen

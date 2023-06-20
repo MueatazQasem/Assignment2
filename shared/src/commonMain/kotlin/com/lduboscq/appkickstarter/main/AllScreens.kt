@@ -10,4 +10,6 @@ sealed class AllScreens {
     object Wounds : AllScreens()
     object BrokenBone : AllScreens()
     object Drowning : AllScreens()
+
+    object UserScreen : AllScreens()
 }

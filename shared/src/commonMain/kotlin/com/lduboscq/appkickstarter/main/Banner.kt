@@ -128,7 +128,7 @@ import org.jetbrains.compose.resources.ExperimentalResourceApi
                     if (InputName.isEmpty() || InputEmail.isEmpty() || InputPassword.isEmpty()){
                         DispalyMessage = "Please Fill-in All Text Fields"
                     } else {
-                        DispalyMessage = " Thank you for your registration $InputName"
+                       // DispalyMessage = " Thank you for your registration $InputName"
                         navigator.push(screenRouter(AllScreens.Service))
 
                     }
